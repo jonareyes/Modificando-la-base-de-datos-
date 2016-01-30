@@ -1,0 +1,18 @@
+INSERT INTO Orders(CustomerID)
+VALUES(1);
+
+INSERT INTO orderdetails(OrderID, productID, Unitprice, Quantity)
+VALUES(1, 7, 9.00, 25);
+
+INSERT INTO orderdetails(OrderID, productID, Unitprice, Quantity)
+VALUES(4, 6, 15.00, 90);
+
+INSERT INTO Customers(CompanyName, ContactName, ContactTitle, Address, City, State)
+VALUES("Intello", "Jonathan Reyes", "Director", "Lago como 50", "México", "DF")
+
+UPDATE Orders 
+SET CustomerID = 1
+WHERE Orders.OrderDate > 2013;
+
+DELETE FROM Customers
+WHERE CompanyName = "Slots Carpet"
